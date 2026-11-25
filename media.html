@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media &amp; Showcase | Abdullah Amjad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress"></div>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Abdullah<span>.dev</span></a>
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="menu-label" aria-label="Toggle Navigation">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies &amp; Interests</a></li>
+        <li><a href="media.html" class="active">Media &amp; Showcase</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="fade-up">
+      <h1 class="section-title">Media &amp; Visual Showcase</h1>
+      <p class="section-subtitle">Use the category tabs below to filter between profile photography and technical showcases.</p>
+
+      <!-- Pure CSS Radio Filter Controls -->
+      <input type="radio" name="media-filter" id="filter-all" class="filter-radio" checked />
+      <input type="radio" name="media-filter" id="filter-profile" class="filter-radio" />
+      <input type="radio" name="media-filter" id="filter-dev" class="filter-radio" />
+
+      <div class="filter-bar">
+        <label for="filter-all" class="filter-label">All Showcase</label>
+        <label for="filter-profile" class="filter-label">Profile &amp; Portrait</label>
+        <label for="filter-dev" class="filter-label">Engineering &amp; UI</label>
+      </div>
+
+      <div class="grid-3 media-grid">
+        <div class="media-item cat-profile">
+          <img src="myphoto.jpg" alt="Abdullah Amjad Executive Portrait" />
+          <div class="media-caption">
+            <h3 style="color: var(--gold-bright); margin-bottom: 0.4rem;">Executive Portrait</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Official formal portrait for software engineering and internship applications.</p>
+          </div>
+        </div>
+
+        <div class="media-item cat-dev">
+          <div class="media-banner">PostgreSQL &amp; Relational Architecture</div>
+          <div class="media-caption">
+            <h3 style="color: var(--gold-bright); margin-bottom: 0.4rem;">Database Systems</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Table inheritance, constraints, and high-efficiency SQL schemas.</p>
+          </div>
+        </div>
+
+        <div class="media-item cat-dev">
+          <div class="media-banner">Figma UI/UX &amp; Dark-Mode Systems</div>
+          <div class="media-caption">
+            <h3 style="color: var(--gold-bright); margin-bottom: 0.4rem;">Interface Prototyping</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Responsive black-and-gold design systems built for clarity and accessibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Abdullah Amjad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
